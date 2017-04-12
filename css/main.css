@@ -1,0 +1,20 @@
+#lighthouse-header {
+  position: absolute;
+  top: 8%;
+  left: 5%;
+  color: white;
+  font-weight: bold;
+}
+#lighthouse-slogan {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+#lighthouse-slogan > a:hover {
+  text-decoration: none;
+  border: 5px solid black;
+}
