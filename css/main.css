@@ -1,20 +1,55 @@
+/* Top Menu */
+
+#menu {
+  color: maroon;
+  font-size: 20px;
+}
+#menu > div {
+  padding: 10px;
+}
+#menu > div:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  opacity: 0.75;
+}
+
+/* Lighthouse */
+
+#lighthouse {
+  color: white;
+}
 #lighthouse-header {
   position: absolute;
-  top: 8%;
+  top: 6%;
   left: 5%;
-  color: white;
   font-weight: bold;
 }
 #lighthouse-slogan {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
   font-weight: bold;
   text-align: center;
+  line-height: 45px;
+}
+#lighthouse-slogan > a {
+  padding: 3px 5px 3px 5px;
+  color: inherit;
 }
 #lighthouse-slogan > a:hover {
   text-decoration: none;
-  border: 5px solid black;
+  border: 3px solid;
+  border-radius: 5px;
+  background:rgba(20,20,20,.2);
+}
+
+/* About Us */
+#about-us {
+  margin-top: 25px;
+}
+#text-1 {
+  text-align: justify;
+  margin: 10px;
+  padding: 15px;
 }
