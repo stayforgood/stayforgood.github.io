@@ -1,13 +1,13 @@
 /* Top Menu */
 
-#menu {
+#menu > div > a {
   color: maroon;
   font-size: 20px;
 }
 #menu > div {
   padding: 10px;
 }
-#menu > div:hover {
+#menu > div > a:hover {
   text-decoration: underline;
   cursor: pointer;
   opacity: 0.75;
