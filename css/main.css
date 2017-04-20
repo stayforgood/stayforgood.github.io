@@ -32,28 +32,33 @@
   font-weight: bold;
   text-align: center;
   line-height: 50px;
+  transition: background-color 500ms ease;
 }
 #lighthouse-slogan > a {
-  padding: 3px 5px 3px 5px;
+  padding: 5px;
   color: inherit;
-}
-#lighthouse-slogan > a:hover {
   text-decoration: none;
   border: 3px solid;
   border-radius: 5px;
-  background:rgba(20,20,20,.2);
+  background: rgba(20,20,20,.2);
+}
+#lighthouse-slogan > a:hover {
+  background: none;
 }
 
 /* About Us */
 
 #text-1 {
-  /*text-align: justify;*/
   margin: 10px;
   padding: 15px;
+}
+#text-1 > * {
+  line-height: 28px;
 }
 #why-nantucket {
   padding: 15px;
   margin-right: 15px;
+  background: rgba(237, 243, 254,.3);
 }
 
 /* How It Works */
@@ -62,9 +67,14 @@
 }
 
 /* Charitable Causes */
+#other-orgs {
+  background: rgba(1, 1, 1, 0.04);
+}
 
 /* Contact Us */
 #photo-7 {
-  padding: 0 100px 100px 100px;
-  border-radius: 5px;
+  padding: 0 80px 100px 80px;
+}
+#photo-7 > img {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5), 0 1px 2px rgba(0,0,0,0.24);
 }
