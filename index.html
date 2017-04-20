@@ -34,11 +34,7 @@
         <!-- Custom Javascript -->
         <script src="js/scripts.js"></script>
         <!-- JQuery -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <!-- Stellar JS (for parallax scrolling) -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/stellar.js/0.6.2/jquery.stellar.min.js"></script>
-
-
+        <script src="js/jquery.min.js"></script>
   </head>
 
   <!-- Title -->
@@ -46,261 +42,235 @@
   <!-- Icon -->
   <link rel="shortcut icon" href="favicon.ico">
 
-<body>
-
 <!-- **** MAIN ****  -->
-
-<!-- 0. Menu -->
-<div class="row main-row" id="menu">
-  <div class="text-center col-xs-6 col-sm-2 col-sm-offset-1">
-    <a onclick="scrollTo('a-about-us')"> About Us</a>
+<body>
+  <!-- 0. Menu -->
+  <div class="row main-row" id="menu">
+    <div class="text-center col-xs-6 col-sm-2 col-sm-offset-1">
+      <a onclick="scrollTo('a-about-us')"> About Us</a>
+    </div>
+    <div class="text-center col-xs-6 col-sm-2">
+      <a>How It Works</a>
+    </div>
+    <div class="text-center col-xs-6 col-sm-2">
+      <a>Charitable Causes</a>
+    </div>
+    <div class="text-center col-xs-6 col-sm-2">
+      <a>Who We Are</a>
+    </div>
+    <div class="text-center col-xs-6 col-sm-2 col-xs-offset-3 col-sm-offset-0">
+      <a>Contact Us</a>
+    </div>
   </div>
-  <div class="text-center col-xs-6 col-sm-2">
-    <a>How It Works</a>
+  <!-- 1. <Lighthouse> -->
+  <div class="row main-row" id="lighthouse">
+    <div class="col-xs-12">
+      <h1 id="lighthouse-header"> Stay For Good </h1>
+      <h2 id="lighthouse-slogan"> Giving bACK, <br>one home at a time <br><a href="#">Learn More</a></h2>
+      <img class="img-responsive" src="photos/photo1.jpg"/>
+    </div>
   </div>
-  <div class="text-center col-xs-6 col-sm-2">
-    <a>Charitable Causes</a>
+  <!-- 2. About Us -->
+  <div class="container" id="a-about-us">
+    <div class="row main-row">
+      <div class="col-xs-12">
+        <h1>About Us</h1>
+        <br>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <div id="text-1">
+          <h4>Stay For Good is a Nantucket-based nonprofit start up founded by two caddies at Sankaty Head Golf Club. We strive to harness wasted value in vacant vacation homes, and contribute the money raised to our charitable partner groups.</h4>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-8">
+        <div class="card container-fluid" id="why-nantucket">
+          <h3>Why Nantucket?</h3>
+          <div class="row">
+            <div class="col-xs-12 col-sm-4 font-bold">
+              <h4>Prevalence of Vacation Homes</h4>
+              <p class="why-nantucket-text">Nantucket is home to only about 10,000 residents, but sustains a population of nearly 60,000 each year. This means that roughly 5 in 6 homes are dedicated to seasonal vacationers.</p>
+            </div>
+            <div class="col-xs-12 col-sm-4 font-bold">
+              <h4>Inflated Rental Prices</h4>
+              <p class="why-nantucket-text">Nantucket contains some of New England’s most expensive homes -- and therefore its highest rental rates (often several thousand dollars per week). Optimizing the charitable value in Nantucket homes is more efficient than most places in the country.</p>
+            </div>
+            <div class="col-xs-12 col-sm-4 font-bold">
+              <h4>Social Web</h4>
+              <p class="why-nantucket-text">Trust is the cornerstone of Stay For Good’s entire organization. By making connections in Nantucket’s wide social sphere, we aim to connect homeowners with renters that they are familiar and comfortable with to achieve this ideal.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="text-center col-xs-6 col-sm-2">
-    <a>Who We Are</a>
-  </div>
-  <div class="text-center col-xs-6 col-sm-2 col-xs-offset-3 col-sm-offset-0">
-    <a>Contact Us</a>
-  </div>
-</div>
-
-<!-- 1. <Lighthouse> -->
-<div class="row main-row" id="lighthouse">
-  <div class="col-xs-12">
-    <h1 id="lighthouse-header"> Stay For Good </h1>
-    <h2 id="lighthouse-slogan"> Giving bACK, <br>one home at a time <br><a href="#">Learn More</a></h2>
-    <img class="img-responsive" data-stellar-background-ratio="0.5" src="photos/photo1.jpg" />
-  </div>
-</div>
-
-<!-- 2. About Us -->
-<div class="container" id="a-about-us">
+  <!-- 3. <Houses On Water> -->
   <div class="row main-row">
     <div class="col-xs-12">
-      <h1>About Us</h1>
-      <br>
-    </div>
-    <div class="col-xs-8 col-sm-4 col-xs-offset-2 col-sm-offset-0">
-      <div id="text-1">
-        <h4>Stay For Good is a Nantucket-based nonprofit start up founded by two caddies at Sankaty Head Golf Club. We strive to harness wasted value in vacant vacation homes, and contribute the money raised to our charitable partner groups.</h4>
-      </div>
-    </div>
-    <div class="col-xs-12 col-sm-8">
-      <div class="card container-fluid" id="why-nantucket">
-        <h3>Why Nantucket?</h3>
-        <div class="row">
-          <div class="col-xs-4 font-bold">
-            <h4>Prevalence of Vacation Homes</h4>
-          </div>
-          <div class="col-xs-4 font-bold">
-            <h4>Inflated Rental Prices</h4>
-          </div>
-          <div class="col-xs-4 font-bold">
-            <h4>Social Web</h4>
-          </div>
-        </div>
-        <div class="row" id="why-nantucket-text">
-          <div class="col-xs-4">Nantucket is home to only about 10,000 residents, but sustains a population of nearly 60,000 each year. This means that roughly 5 in 6 homes are dedicated to seasonal vacationers.</div>
-          <div class="col-xs-4">Nantucket contains some of New England’s most expensive homes -- and therefore its highest rental rates (often several thousand dollars per week). Optimizing the charitable value in Nantucket homes is more efficient than most places in the country.</div>
-          <div class="col-xs-4">Trust is the cornerstone of Stay For Good’s entire organization. By making connections in Nantucket’s wide social sphere, we aim to connect homeowners with renters that they are familiar and comfortable with to achieve this ideal.</div>
-        </div>
-      </div>
+      <img class="img-responsive" src="photos/photo2.jpg" />
     </div>
   </div>
-</div>
-
-<!-- 3. <Houses On Water> -->
-<div class="row main-row">
-  <div class="col-xs-12">
-    <img class="img-responsive" src="photos/photo2.jpg" />
-  </div>
-</div>
-
-<!-- 4. How It Works -->
-<div class="container" id="a-how-it-works">
-  <div class="row main-row">
-    <div class="col-xs-12 text-center">
-      <h1> How It Works </h1>
-      <br>
-      <div class="container-fluid">
-        <div class="row text-center">
-          <div class="col-xs-12 col-sm-3">
-            <!-- Home Icon -->
-            <i class="ack-xl fa fa-home" aria-hidden="true"></i>
-            <br>
-            <br>
-            <p class="how-it-works-text">
-              Stay For Good seeks Nantucket homeowners that typically do not rent their homes while vacant. Anyone with a vacation home on Nantucket that isn't always occupied is eligible to receive prospective matches from Stay For Good.
-            </p>
-          </div>
-          <div class="col-xs-12 col-sm-3">
-            <!-- Chain Link Icon -->
-            <i class="ack-xl fa fa-link" aria-hidden="true"></i>
-            <br>
-            <br>
-            <p class="how-it-works-text">
-              We utilize the unique network signature to Nantucket to fill each home with mutual friends of homeowners – not random strangers. When Stay for Good finds a potential match, the homeowner receives a rental request from us, which is then either accepted or rejected. By agreeing to work with Stay For Good, homeowners are in no way obligated to rent their home – they are only agreeing to consider potential matches.
-            </p>
-          </div>
-          <div class="col-xs-12 col-sm-3">
-            <!-- Wrench Icon -->
-            <i class="ack-xl fa fa-wrench" aria-hidden="true"></i>
-            <br>
-            <br>
-            <p class="how-it-works-text">
-              Stay For Good handles all operations and logistics of each rental, but only serves as an intermediary – we never make any decisions about properties without homeowner consent. Stay for Good provides extensive insurance policies, prompt and thorough cleaning services, and on-site renter relations to all participating homeowners.
-            </p>
-          </div>
-          <div class="col-xs-12 col-sm-3">
-            <!-- Refresh Icon -->
-            <i class="ack-xl fa fa-refresh" aria-hidden="true"></i>
-            <br>
-            <br>
-            <p class="how-it-works-text">
-              The funds raised through rental fees are then transferred to one of our partnering charitable causes of the homeowner’s choice. As a nonprofit, our slim commissions are strictly used for insurance premiums, cleaning fees, and operational expenses.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- 5. <Pathway To Dunes> -->
-<div class="row main-row">
-  <div class="col-xs-12">
-    <img class="img-responsive" src="photos/photo3.jpg" />
-  </div>
-</div>
-
-<!-- 6. Charitable Causes-->
-<div class="container" id="a-charity">
-  <div class="row main-row">
-    <div class="col-xs-12">
-      <h1> Charitable Causes </h1>
-    </div>
-    <div class="col-xs-8 col-sm-4 col-xs-offset-2 col-sm-offset-0">
-      <img class="img-responsive" src="photos/photo5.jpg" />
-      <br>
-      Habitat for Humanity is Stay for Good's default charitable beneficiary. Founded in 1976, Habitat for Humanity uses donations and volunteer labor to construct homes for less fortunate people around the world. Stay for Good's partnership with Habitat for Humanity enables the value in vacant Nantucket homes to benefit homeless people elsewhere.
-    </div>
-    <div class="col-xs-12 col-sm-8 left-outer">
-      <div class="card-2" id="other-orgs">
-        <h3 class="text-center">Other Organizations</h3>
+  <!-- 4. How It Works -->
+  <div class="container" id="a-how-it-works">
+    <div class="row main-row">
+      <div class="col-xs-12 text-center">
+        <h1> How It Works </h1>
         <br>
         <div class="container-fluid">
-          <div class="row">
-            <div class="col-xs-12 col-sm-5">
-              <img class="img-responsive" src="photos/photo6.jpg" />
+          <div class="row text-center">
+            <div class="col-xs-12 col-sm-3">
+              <!-- Home Icon -->
+              <i class="ack-xl fa fa-home" aria-hidden="true"></i>
+              <br>
+              <br>
+              <p class="how-it-works-text">
+                Stay For Good seeks Nantucket homeowners that typically do not rent their homes while vacant. Anyone with a vacation home on Nantucket that isn't always occupied is eligible to receive prospective matches from Stay For Good.
+              </p>
             </div>
-            <div class="col-xs-12 col-sm-7">
-              For homeowners with a specific preference for other charitable causes, Stay for Good will gladly direct proceeds to many other 501(c)(3) organizations. Many Nantucket-based are eligible for partnership with Stay for Good, including but not limited to the Nantucket Cottage Hospital, the Sconset Trust, and the Nantucket Atheneum. 
+            <div class="col-xs-12 col-sm-3">
+              <!-- Chain Link Icon -->
+              <i class="ack-xl fa fa-link" aria-hidden="true"></i>
+              <br>
+              <br>
+              <p class="how-it-works-text">
+                We utilize the unique network signature to Nantucket to fill each home with mutual friends of homeowners – not random strangers. When Stay for Good finds a potential match, the homeowner receives a rental request from us, which is then either accepted or rejected. By agreeing to work with Stay For Good, homeowners are in no way obligated to rent their home – they are only agreeing to consider potential matches.
+              </p>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+              <!-- Wrench Icon -->
+              <i class="ack-xl fa fa-wrench" aria-hidden="true"></i>
+              <br>
+              <br>
+              <p class="how-it-works-text">
+                Stay For Good handles all operations and logistics of each rental, but only serves as an intermediary – we never make any decisions about properties without homeowner consent. Stay for Good provides extensive insurance policies, prompt and thorough cleaning services, and on-site renter relations to all participating homeowners.
+              </p>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+              <!-- Refresh Icon -->
+              <i class="ack-xl fa fa-refresh" aria-hidden="true"></i>
+              <br>
+              <br>
+              <p class="how-it-works-text">
+                The funds raised through rental fees are then transferred to one of our partnering charitable causes of the homeowner’s choice. As a nonprofit, our slim commissions are strictly used for insurance premiums, cleaning fees, and operational expenses.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-
-<!-- 7. <Construction> -->
-<div class="row main-row">
-  <div class="col-xs-12">
-    <img class="img-responsive" src="photos/photo4-2.jpg" />
-  </div>
-</div>
-
-<!-- 8. Liam and Dylan -->
-<div class="container" id="a-who-we-are">
+  <!-- 5. <Pathway To Dunes> -->
   <div class="row main-row">
-    <div class="col-xs-12 text-center">
-      <h1>Who We Are</h1>
-    </div>
-    <div class="col-xs-12 col-md-6 left-outer text-center">
-      <div>
-        <h2>Liam Flaherty</h2>
-        <img class="headshot center-block" src="photos/liam.jpg" />
-        <br> <br>
-        <p>
-          Liam is a first year student at the University of Virginia, studying Commerce. He has spent his last five summers on Nantucket as a caddie at Sankaty Head Golf Club, and is originally from Barrington, Rhode Island. Liam started developing Stay for Good during the summer of 2016.
-        </p>
-      </div>
-    </div>
-    <div class="col-xs-12 col-md-6 right-outer text-center">
-      <div>
-        <h2>Dylan O'Keefe</h2>
-        <img class="headshot center-block" src="photos/dylan.jpg" />
-        <br> <br>
-        <p>
-           Dylan is a second year student at the University of Virginia, majoring in Economics and English. He has also spent his last five summers at Sankaty Head Golf Club, and his last three as the club's Caddiemaster. Dylan is from Washington, D.C.
-        </p>
-      </div>
+    <div class="col-xs-12">
+      <img class="img-responsive" src="photos/photo3.jpg" />
     </div>
   </div>
-</div>
-
-<!-- 9. Contact Us -->
-<div class="container" id="a-contact">
-  <div class="main-row">
-    <div class="row">
+  <!-- 6. Charitable Causes-->
+  <div class="container" id="a-charity">
+    <div class="row main-row">
       <div class="col-xs-12">
-        <h1>Contact Us</h1>
+        <h1> Charitable Causes </h1>
       </div>
-      <div class="col-xs-8">  
-        <div class="container-fluid card">
-          <div class="row">
-            <div class="col-xs-1 col-xs-offset-1">
-              <h3><i class="fa fa-envelope"></i></h3>
-            </div>
-            <div class="col-xs-10">
-              <h3>stayforgoodack@gmail.com</h3>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-xs-1 col-xs-offset-1">
-              <h3><i class="fa fa-phone"></i></h3>
-            </div>
-            <div class="col-xs-10">
-              <h3>(401) 595 - 0013</h3>
+      <div class="col-xs-8 col-sm-4 col-xs-offset-2 col-sm-offset-0">
+        <img class="img-responsive" src="photos/photo5.jpg" />
+        <br>
+        Habitat for Humanity is Stay for Good's default charitable beneficiary. Founded in 1976, Habitat for Humanity uses donations and volunteer labor to construct homes for less fortunate people around the world. Stay for Good's partnership with Habitat for Humanity enables the value in vacant Nantucket homes to benefit homeless people elsewhere.
+      </div>
+      <div class="col-xs-12 col-sm-8 left-outer">
+        <div class="card-2" id="other-orgs">
+          <h3 class="text-center">Other Organizations</h3>
+          <br>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-12 col-sm-5">
+                <img class="img-responsive" src="photos/photo6.jpg" />
+              </div>
+              <div class="col-xs-12 col-sm-7">
+                For homeowners with a specific preference for other charitable causes, Stay for Good will gladly direct proceeds to many other 501(c)(3) organizations. Many Nantucket-based are eligible for partnership with Stay for Good, including but not limited to the Nantucket Cottage Hospital, the Sconset Trust, and the Nantucket Atheneum.
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-xs-4" id="photo-7">  
-        <img class="center-block img-responsive" src="photos/photo7.jpg" />
+    </div>
+  </div>
+  <!-- 7. <Construction> -->
+  <div class="row main-row">
+    <div class="col-xs-12">
+      <img class="img-responsive" src="photos/photo4-2.jpg" />
+    </div>
+  </div>
+  <!-- 8. Liam and Dylan -->
+  <div class="container" id="a-who-we-are">
+    <div class="row main-row">
+      <div class="col-xs-12 text-center">
+        <h1>Who We Are</h1>
+      </div>
+      <div class="col-xs-12 col-md-6 left-outer text-center">
+        <div>
+          <h2>Liam Flaherty</h2>
+          <img class="headshot center-block" src="photos/liam.jpg" />
+          <br> <br>
+          <p>
+            Liam is a first year student at the University of Virginia, studying Commerce. He has spent his last five summers on Nantucket as a caddie at Sankaty Head Golf Club, and is originally from Barrington, Rhode Island. Liam started developing Stay for Good during the summer of 2016.
+          </p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6 right-outer text-center">
+        <div>
+          <h2>Dylan O'Keefe</h2>
+          <img class="headshot center-block" src="photos/dylan.jpg" />
+          <br> <br>
+          <p>
+            Dylan is a second year student at the University of Virginia, majoring in Economics and English. He has also spent his last five summers at Sankaty Head Golf Club, and his last three as the club's Caddiemaster. Dylan is from Washington, D.C.
+          </p>
+        </div>
       </div>
     </div>
   </div>
-</div>
-
-<!-- **** FOOT ****  -->
-
-<div class="container-fluid ack-gray">
-  <div class="row text-center">
-    <div class="col-xs-12">
-      <br>
-      <h5> Stay For Good © 2017 </h5>
-      <br>
+  <!-- 9. Contact Us -->
+  <div class="container" id="a-contact">
+    <div class="main-row">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1>Contact Us</h1>
+        </div>
+        <div class="col-xs-12 col-sm-8">
+          <div class="container-fluid card">
+            <div class="row">
+              <div class="col-xs-1 col-xs-offset-1">
+                <h3><i class="fa fa-envelope"></i></h3>
+              </div>
+              <div class="col-xs-10">
+                <h3>stayforgoodack@gmail.com</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-1 col-xs-offset-1">
+                <h3><i class="fa fa-phone"></i></h3>
+              </div>
+              <div class="col-xs-10">
+                <h3>(401) 595 - 0013</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hidden-xs col-sm-4" id="photo-7">
+          <img class="center-block img-responsive" src="photos/photo7.jpg" />
+        </div>
+      </div>
     </div>
   </div>
-</div>
-
+  <!-- **** FOOT ****  -->
+  <div class="container-fluid ack-gray">
+    <div class="row text-center">
+      <div class="col-xs-12">
+        <br>
+        <h5> Stay For Good © 2017 </h5>
+        <br>
+      </div>
+    </div>
+  </div>
 </body>
-
-
-<!-- Activate Scroll -->
-
-<script>
-  $.stellar({
-    horizontalScrolling: false,
-    responsive: true
-});
-</script>
 
 <!-- TODO LIST
   (1) stellarjs parallax images

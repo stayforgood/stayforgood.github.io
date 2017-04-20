@@ -16,15 +16,20 @@
 /* Lighthouse */
 
 #lighthouse {
+  background-image: url("../photos/photo1.jpg");
+  background-attachment: fixed;
   color: white;
+  position: relative;
 }
 #lighthouse-header {
+  font-size: 3em;
   position: absolute;
   top: 6%;
   left: 5%;
   font-weight: bold;
 }
 #lighthouse-slogan {
+  font-size: 2em;
   position: absolute;
   top: 30%;
   left: 50%;
@@ -44,6 +49,7 @@
 }
 #lighthouse-slogan > a:hover {
   background: none;
+  cursor: pointer;
 }
 
 /* About Us */
@@ -60,6 +66,10 @@
   margin-right: 15px;
   background: rgba(237, 243, 254,.3);
 }
+#why-nantucket h4 {
+  font-weight: bold;
+}
+.why-nantucket-text {}
 
 /* How It Works */
 .how-it-works-text {
