@@ -16,7 +16,6 @@
 /* Lighthouse */
 
 #lighthouse {
-  background-image: url("../photos/photo1.jpg");
   background-attachment: fixed;
   color: white;
   position: relative;
@@ -50,6 +49,19 @@
 #lighthouse-slogan > a:hover {
   background: none;
   cursor: pointer;
+}
+#lighthouse-mobile {
+  background-attachment: fixed;
+  color: white;
+  position: relative;
+}
+#lighthouse-mobile #lighthouse-header {
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+#lighthouse-mobile #lighthouse-slogan {
+  top: 60%;
 }
 
 /* About Us */
