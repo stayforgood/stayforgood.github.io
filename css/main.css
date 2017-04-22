@@ -1,5 +1,8 @@
 /* Top Menu */
-
+#menu {
+  margin-top: 10px;
+  margin-bottom: -20px;
+}
 #menu > div > a {
   color: maroon;
   font-size: 20px;
