@@ -36,7 +36,6 @@
   font-weight: bold;
   text-align: center;
   line-height: 50px;
-  transition: background-color 500ms ease;
 }
 #lighthouse-slogan > a {
   padding: 5px;
@@ -44,6 +43,7 @@
   text-decoration: none;
   border: 3px solid;
   border-radius: 5px;
+  transition: background 900ms;
   background: rgba(20,20,20,.2);
 }
 #lighthouse-slogan > a:hover {

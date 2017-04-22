@@ -34,7 +34,7 @@
         <!-- JQuery -->
         <script src="js/jquery.min.js"></script>
         <!-- Scrolling -->
-        <script src="js/jquery-scrollintoview.js"></script>
+        <!-- <script src="js/jquery-scrollintoview.js"></script> -->
   </head>
 
   <!-- Title -->
@@ -47,26 +47,26 @@
   <!-- 0. Main Menu -->
   <div class="row main-row" id="menu">
     <div class="text-center col-xs-6 col-sm-2 col-sm-offset-1">
-      <a onclick="$('#a-about-us').scrollIntoView()"> About Us</a>
+      <a onclick="scrollTo('#a-about-us')"> About Us</a>
     </div>
     <div class="text-center col-xs-6 col-sm-2">
-      <a onclick="$('#a-how-it-works').scrollIntoView()">How It Works</a>
+      <a onclick="scrollTo('#a-how-it-works')">How It Works</a>
     </div>
     <div class="text-center col-xs-6 col-sm-2">
-      <a onclick="$('#a-charity').scrollIntoView()">Charitable Causes</a>
+      <a onclick="scrollTo('#a-charity')">Charitable Causes</a>
     </div>
     <div class="text-center col-xs-6 col-sm-2">
-      <a onclick="$('#a-who-we-are').scrollIntoView()">Who We Are</a>
+      <a onclick="scrollTo('#a-who-we-are')">Who We Are</a>
     </div>
     <div class="text-center col-xs-6 col-sm-2 col-xs-offset-3 col-sm-offset-0">
-      <a onclick="$('#a-contact').scrollIntoView()">Contact Us</a>
+      <a onclick="scrollTo('#a-contact')">Contact Us</a>
     </div>
   </div>
   <!-- 1. <Lighthouse> -->
   <div class="row main-row hidden-xs" id="lighthouse">
     <div class="col-xs-12">
       <h1 id="lighthouse-header"> Stay For Good </h1>
-      <h2 id="lighthouse-slogan"> Giving bACK, <br>one home at a time <br><a onclick="$('#a-about-us').scrollIntoView()">Learn More</a></h2>
+      <h2 id="lighthouse-slogan"> Giving bACK, <br>one home at a time <br><a onclick="scrollTo('#a-about-us')">Learn More</a></h2>
       <img class="img-responsive" src="photos/photo1.jpg"/>
     </div>
   </div>
@@ -74,7 +74,7 @@
   <div class="row main-row hidden-lg hidden-md hidden-sm visible-xs" id="lighthouse-mobile">
     <div class="col-xs-12">
       <h1 id="lighthouse-header"> Stay For Good </h1>
-      <h2 id="lighthouse-slogan"> Giving bACK, <br>one home at a time <br><a href="#">Learn More</a></h2>
+      <h2 id="lighthouse-slogan"> Giving bACK, <br>one home at a time <br><a onclick="scrollTo('#a-about-us')">Learn More</a></h2>
       <img class="img-responsive" src="photos/photo1-crop.jpg"/>
     </div>
   </div>
@@ -278,6 +278,12 @@
     </div>
   </div>
 </body>
+
+<script>
+  var scrollTo = function(classifier) {
+    $(classifier).get(0).scrollIntoView({ behavior: 'smooth'});
+  }
+</script>
 
 <!-- TODO LIST
   (1) stellarjs parallax images
